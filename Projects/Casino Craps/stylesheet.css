@@ -1,0 +1,144 @@
+/*
+  Author: 		  Deepkumar Patel
+  File name: 	  stylesheet.css
+  Date Created:	  27th june 2021
+  Date Updated:   30th june 2021
+  Purpose: 		  make Casino Craps game using unobtrusive javascript
+  References:
+        No References
+  Description:
+        Stylesheet to customize the stle of the elements in index.html .
+*/
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #01002C;
+    color: #c4fff9;
+}
+#heading{
+    display: inline-flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: center;
+}
+#heading>h1{
+    margin-left: 20px;
+}
+.container{
+    display: grid;
+    grid-template-rows: max-content;
+    justify-content: center;
+    align-items: center;
+
+}
+.dices{
+    display: grid;
+    width: 1200px;
+    grid-gap: 50px;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+}
+.dices > div{
+    background-color: teal;
+    color: #ffd166;
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    padding: auto;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.result{
+    display: grid;
+    width: 1200px;
+    justify-content: center;
+    margin-top: 50px;
+    grid-template-columns:auto auto auto;
+    align-items: center;
+    grid-gap: 50px;
+    font-size: 25px;
+}
+#total{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    padding: auto;
+    text-align: center;
+    background-color: teal;
+    padding-top: 20px;
+    font-size: 40px;
+}
+.result > div{
+    box-sizing: border-box;
+
+    width: 80px;
+    height: 80px;
+    padding: auto;
+    text-align: center;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding-top: 20px;
+ 
+}
+#scoreBox{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#button,#click{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:transparent;
+    color: #00FFC8;
+    border: 1px solid #00FFC8;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+#button:hover{
+    background-color: #00FFC8;
+    color: #01002C;
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    color: #00FFC8;
+    border: 1px solid #00FFC8;
+    border-radius: 10px;
+    transition: 400ms;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+#home:hover, #click:hover{
+    background-color: #00FFC8;
+    color: #01002C;
+}
+.button, .rollTheDice{
+    width: 1200px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+#click{
+    font-size: 15px;
+}
+#elements{
+    background-color:  #01002C;
+}

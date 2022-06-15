@@ -1,0 +1,93 @@
+/*
+  Author: 		    Deepkumar Patel
+  File name: 	    index.html
+  Date Created:	  25th june 2021
+  Date Updated:   30th june 2021
+  Purpose: 		    make Tic-Tac-Toe game using unobtrusive javascript
+  Description:
+                  Stylesheet to customize the stle of the elements in index.html
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #01002C;
+  color: #c4fff9;
+  font-family: 'Courier New', monospace;
+}
+*{
+  box-sizing: border-box;
+}
+#heading{
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  color: #00FFC8;
+  border: 1px solid #00FFC8;
+  border-radius: 10px;
+  transition: 400ms;
+  margin-top: 25px;
+  text-decoration: none;
+  font-weight: 550;
+}
+
+#home:hover{
+  background-color: #00FFC8;
+  color: #01002C;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#boxes {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 390px;
+}
+
+.box {
+  height: 130px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  color: #00FFC8;
+}
+
+.box:hover {
+  cursor: pointer;
+}
+
+
+#button{
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  background-color:transparent;
+  color: #00FFC8;
+  border: 1px solid #00FFC8;
+  border-radius: 10px;
+  transition: 400ms;
+}
+#button:hover{
+  background-color: #00FFC8;
+  color: #01002C;
+}
+#result{
+  visibility: hidden;
+}

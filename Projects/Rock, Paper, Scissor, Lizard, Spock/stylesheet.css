@@ -1,0 +1,116 @@
+/*
+  Author: 		  Deepkumar Patel
+  File name: 	  stylesheet.css
+  Date Created:	  12th june 2021
+  Date Updated:   19th june 2021
+  Purpose: 		  make Rock, Paper, Scissor, Lizard, Spock game using unobtrusive javascript
+  Copyright: 
+        This work is the property of Deepkumar Patel(Me).
+  References:
+        No References
+  Description:
+        Stylesheet to customize the stle of the elements in index.html .
+*/
+body{
+    background-color: #01002C;
+    color: #c4fff9;
+    font-family: 'Courier New', monospace;
+}
+
+#heading{
+    display: inline-flex;
+    flex-direction: row;
+    width: 1200px;
+    justify-content: space-evenly;
+}
+
+#heading>h1{
+    width: 150px;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: max-content;
+    justify-content: center;
+
+}
+
+.resultBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent ;
+    border-radius: 10px;
+}
+
+#imageDiv{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+}
+
+.images{
+    height: 150px;
+    width: 150px;
+    transition: transform .7s ease-in-out;
+}
+
+.images:hover{
+    cursor:pointer;
+    transform: rotate(360deg);
+    
+}
+
+#totalScore{
+    border: 2px solid #00FFC8;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+#button{
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color:transparent;
+    color: #00FFC8;
+    border: 1px solid #00FFC8;
+    border-radius: 10px;
+    transition: 400ms;
+}
+
+#button:hover{
+    background-color: #00FFC8;
+    color: #01002C;
+}
+
+#scoreAndReset{
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    color: #00FFC8;
+    border: 1px solid #00FFC8;
+    border-radius: 10px;
+    transition: 400ms;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+#home:hover{
+    background-color: #00FFC8;
+    color: #01002C;
+}

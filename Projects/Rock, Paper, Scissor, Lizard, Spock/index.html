@@ -1,0 +1,55 @@
+<!--
+  Author: 		  Deepkumar Patel
+  File name: 	  index.html
+  Date Created:	  12th june 2021
+  Date Updated:   19th june 2021
+  Purpose: 		  make Rock, Paper, Scissor, Lizard, Spock game using unobtrusive javascript
+  Copyright: 
+        This work is the property of Deepkumar Patel(Me).
+  References:
+        [Images: Deepkumar Patel]
+  Description:
+        Home page of the game that will be presented to all visitors to the site.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor Lizard Spock</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+
+	<body>
+        <div class="container">
+
+            <div id="heading">
+                <h1 style="color: #ef476f;">Rock</h1>
+                <h1 style="color: #ffd166;">Paper</h1>
+                <h1 style="color: #06d6a0;"> Scissor</h1>
+                <h1 style="color: #ffd166;">Lizard</h1>
+                <h1 style="color: #ef476f;">Spock</h1>
+            </div>
+            <div class="resultBox" >
+                <h2>Options:</h2>
+                    <p>Play against the computer by clicking one of these images.</p>
+                    <div id="imageDiv">
+
+                        <!-- I made these images.-->
+                        <img src="./Images/Rock.png" id="Rock" class="images">
+                        <img src="./Images/Paper.png" id="Paper" class="images">
+                        <img src="./Images/Scissor.png" id="Scissor" class="images">
+                        <img src="./Images/Lizard.png" id="Lizard" class="images">
+                        <img src="./Images/Spock.png" id="Spock" class="images">
+                    </div>
+                <div id="scoreAndReset">
+                    <div><h3 id="result"> This is a temporary text so that RESET button will
+                         stay intact on its position</h3></div>
+                    <div><h2 id="totalScore">this is a temporary text so that RESET button will
+                         stay intact on its position</h2></div>
+                </div>
+                <button id="button">RESET</button>
+                <a href="../../index_members.html" id="home"><p>HOME</p></a>
+            </div>
+        </div>
+        <script src="./javascript.js"></script>
+	</body>
+</html>
